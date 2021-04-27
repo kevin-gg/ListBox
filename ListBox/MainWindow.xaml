@@ -1,0 +1,27 @@
+﻿<Window x:Class="ListBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="scegli un nome" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" Width="98"/>
+        <ComboBox x:Name="cboNomi" HorizontalAlignment="Left" Margin="168,33,0,0" VerticalAlignment="Top" Width="120" Loaded="cboNomi_Loaded"/>
+        <Button x:Name="btnAggiungi" Content="Aggiungi" HorizontalAlignment="Left" Margin="43,265,0,0" VerticalAlignment="Top" Width="75" Click="btnAggiungi_Click"/>
+        <Button x:Name="btnRimuovi" Content="Rimuovi" HorizontalAlignment="Left" Margin="168,265,0,0" VerticalAlignment="Top" Width="75" Click="btnRimuovi_Click"/>
+        <Button x:Name="btnPulisci" Content="Pulisci" HorizontalAlignment="Left" Margin="316,265,0,0" VerticalAlignment="Top" Width="75" Click="btnPulisci_Click" />
+        <Button x:Name="btnChiudi" Content="Chiudi" HorizontalAlignment="Left" Margin="124,330,0,0" VerticalAlignment="Top" Width="168" RenderTransformOrigin="0.5,0.5" Height="38" Click="btnChiudi_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.075"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <ListBox x:Name="lboMostra" HorizontalAlignment="Left" Height="121" Margin="43,103,0,0" VerticalAlignment="Top" Width="348"/>
+    </Grid>
+</Window>
